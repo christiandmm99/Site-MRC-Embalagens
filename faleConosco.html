@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Fale Conosco</title>
+</head>
+<body style="background-color: rgb(14, 14, 14);">
+    <header>
+        <div class="headerFale">
+            <h1>Fale Conosco</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="formulario">
+            <h2>Contato</h2>
+            <form action="https://formsubmit.co/d1698b0590365b1c9f87d7f6a4dac5f2" method="post">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html"> 
+                <label>Nome Completo</label>
+                <input id="nome" type="text" name="name" placeholder="Digite Seu Nome Completo" required>
+                <label>Nome da Empresa</label>
+                <input type="text" name="empresa" placeholder="Digite o Nome da Empresa" required>
+                <label>Email</label>
+                <input id="email" type="email  " name="email" placeholder="Digite Seu Email" required>
+                <label>Celular</label>
+                <input id="cel" type="text" name="celular" placeholder="Digite Seu Número" required>
+                <label>CPF</label>
+                <input id="cpf" type="text" name="cpf" placeholder="Digite Seu CPF" required>
+                <label>Como Podemos Ajudar?</label>
+                <input id="descricao" type="text" name="ajuda" placeholder="Informe Seu Problema" required>
+                <button type="submit" name="redirectTo" value="obrigado.html">Enviar</button> 
+
+                <input type="hidden" name="accessKey" value="d1698b0590365b1c9f87d7f6a4dac5f2">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+             </form>
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="mrc-footer">MRC Embalagens</h1>
+            <p style="color: white;font-weight: bold; margin-top: 100px;">© Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+    <script>
+        $('#idade').mask('00/00/0000');
+
+        $('#cel').mask('(00) 00000-0000');
+
+        $('#cpf').mask('000.000.000-00', {reverse: true});
+    </script>
+
+    
+</body>
+</html>
